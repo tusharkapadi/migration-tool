@@ -23,7 +23,9 @@ The script requires to have 2 env variables.
 | SYSDIG_ENDPOINT_URL | End point url for Sysdig backend  | West - https://us2.app.sysdig.com, East - https://secure.sysdig.com | Do not include trailing "/"
 | SYSDIG_API_TOKEN | API Token to access Sysdig resource | look at pre-req | |
 
-  
+Set above 2 environment variables before testing out the script
+
+
 ### How to get Sysdig Monitor API Token:
 
 1. Login to your Sysdig UI
@@ -138,8 +140,6 @@ python3 import dashboard --input_folder="/home/dashboards/" --plan --log_level=d
 ```
 python3 export dashboard --output_folder="/home/dashboards/" --log_folder="/home/dashboards/logs/"
 ```
-
-### Note:
 
 
   
