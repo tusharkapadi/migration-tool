@@ -148,7 +148,8 @@ The docker image can be run using the following command to export dashboards:
 docker run --rm \
   -e SYSDIG_ENDPOINT_URL=<https://app.sysdigcloud.com> \
   -e SYSDIG_API_TOKEN=xxxxxxxxxxxxx \
-  -v "$(pwd)/json:/app/json" \ sysdig-dashboard-migration:latest export dashboards --all
+  -v "$(pwd)/json:/app/json" \
+  sysdig-dashboard-migration:latest export dashboards --all
 ```
 
 The docker image can be run using the following command to import dashboards:
@@ -157,7 +158,8 @@ The docker image can be run using the following command to import dashboards:
 docker run --rm \
   -e SYSDIG_ENDPOINT_URL=<https://app.sysdigcloud.com> \
   -e SYSDIG_API_TOKEN=xxxxxxxxxxxxx \
-  -v "$(pwd)/json:/app/json" \ sysdig-dashboard-migration:latest import dashboards --input_folder="./json/"
+  -v "$(pwd)/json:/app/json" \
+  sysdig-dashboard-migration:latest import dashboards --input_folder="./json/"
 ```
 
 ### License Note
